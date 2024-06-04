@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="Error"></include>
+		</run>
+	</groups>
+  <test thread-count="5" name="standaloneTest">
+    <classes>
+      <class name="testcases.Standalone"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="ErrorValidationsTest">
+    <classes>
+      <class name="testcases.ErrorValidationgroups"/>
+      <class name="testcases.ErrorValidation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
